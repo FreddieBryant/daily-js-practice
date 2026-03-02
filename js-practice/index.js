@@ -904,3 +904,73 @@ console.log('Ticket', ticketsOnly);
 
 
 
+
+cart = [];
+
+cart.push('Apple');
+cart.push('Banana');
+cart.push('Cherry');
+
+console.log(cart);
+
+list = [1, 2, 3, 4, 5, 6];
+evens = [];
+
+//Psuedo-code
+//Start at index 0
+//Stop before the end of list array
+//Step by 1
+//If the number is divisible by two(even)(if sandwich)
+//Push to evens array(not sure how to do this)
+
+
+for (let i = 0; i < list.length; i++) {
+  let currentNum = list[i];
+  if(currentNum % 2 === 0) {
+    evens.push(currentNum);
+  }
+}
+console.log(evens);
+
+//I tried to work throught it
+
+namesList = ["Joe", "Samantha", "Bo", "Alexander"];
+longNames = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of name array
+// Step by 1
+// If name length is less the 5 then push
+// Push (not sure how to do this)
+
+for (let i = 0; i < namesList.length; i++) {
+  if (namesList[i].length > 5) {
+    longNames.push(namesList[i]);
+  }
+}
+console.log(longNames);
+
+orderTotals = [15, 120, 45, 300, 80, 150];
+bigOrders = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of name array
+// Step by 1
+// If order total is greater than 100
+// Push order total to bigOreders array
+
+for (let i = 0; i < orderTotals.length; i++) {
+  if (orderTotals[i] > 100) {
+    bigOrders.push(orderTotals[i]);
+  }
+} 
+console.log(bigOrders);
+
+
+
+
+
+
+
