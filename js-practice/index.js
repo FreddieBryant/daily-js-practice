@@ -968,9 +968,37 @@ for (let i = 0; i < orderTotals.length; i++) {
 } 
 console.log(bigOrders);
 
+//Im still not comfortable and it is time for me to go to work. Is this correct? can I practice a few me when I get off of work tonight or tomorrow when I have more time?
 
 
+inventoryCount = [5, 12, 2, 0, 20, 4]
+restockList = []; 
 
+// Psuedo-code
+// Start at index 0
+// Stop before the end of name array
+// Step by 1
+// If (sandwich) inventoryCount[i] is less than 5
+// Push inventoryCount to restockList array
 
+for (let i = 0; i < inventoryCount.length; i++){
+  if(inventoryCount[i] < 5){
+    restockList.push(inventoryCount[i]);
+  }
+}
+console.log(inventoryCount)
+console.log(restockList);
+//I need help here
 
+guestNames = ['Tom', 'Allen', 'Jacob', 'Tim', 'Adam', 'Amy'];
+vipOnly = [];
+
+for (let i = 0; i < guestNames.length; i++) {
+  if (guestNames[i][0] === 'A') {
+    vipOnly.push(guestNames[i]);
+  }
+}
+console.log(guestNames);
+console.log(vipOnly);
+//I cant figure out what is wrong
 
