@@ -1002,3 +1002,74 @@ console.log(guestNames);
 console.log(vipOnly);
 //I cant figure out what is wrong
 
+studentScores = [45, 88, 92, 30, 75, 100];
+passingStudents = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of name array
+// Step by 1
+// If studentScores[i] greater than 60
+// Push studentScores[i] to passing students array
+
+for (let i = 0; i < studentScores.length; i++) {
+  if (studentScores[i] > 60) {
+    passingStudents.push(studentScores[i]);
+  }
+}
+console.log('All Students', studentScores);
+console.log('Passing Students', passingStudents);
+
+randomWords = ['cat', 'elephant', 'dog', 'hippo', 'ox'];
+shortWords = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of randomWords array
+// Step by 1
+// If randomWords[i].length is lest than or equal to 3
+// Push randomWords to shortWords array
+
+for (let i = 0; i < randomWords.length; i++) {
+  if (randomWords[i].length <= 3) {
+    shortWords.push(randomWords[i]);
+  }
+}
+console.log('All Words', randomWords);
+console.log('Short Words', shortWords);
+
+currentPrices = [80, 25, 150, 45, 10, 60];
+saleItems = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of currentPrices array
+// Step by 1
+// If currentPrices index is less than 50
+// Push currentPrices[i] to saleItems array
+
+for (let i = 0; i < currentPrices.length; i++) {
+  if (currentPrices[i] < 50){
+    saleItems.push(currentPrices[i]);
+  }
+}
+console.log('Prices', currentPrices)
+console.log('Sale Items', saleItems);
+
+emails = ["Hello", "WINNER", "Lunch?", "WINNER", "Meeting"];
+spamFolder = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of emails array
+// Step by 1
+// If emails[i] === "WINNER"
+// Move(PUSH)email[i] to spamFolder
+
+for (let i = 0; i < emails.length; i++) {
+  if (emails[i] === "WINNER") {
+    spamFolder.push(emails[i]);
+  }
+}
+console.log('All Emails', emails)
+console.log('Spam',spamFolder);
