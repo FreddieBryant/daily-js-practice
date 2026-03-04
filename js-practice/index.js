@@ -1073,3 +1073,28 @@ for (let i = 0; i < emails.length; i++) {
 }
 console.log('All Emails', emails)
 console.log('Spam',spamFolder);
+
+//Those took a lot of energy out of me.
+//Did I get them right?
+//How is my psuedo-code?
+//I need a break.
+//I tried all four.
+
+let fans = ["Jim", "Amy", "Janet", "Joe", "Jerry", "Ann"];
+let ages = [25, 19, 33, 15, 60, 18];
+vipSection = [];
+
+// Psuedo-code
+// Start at index 0
+// Stop before the end of fans array
+// Step by 1
+// IF fans[i] starts with the letter "J" && 
+//  ages[i] is greater (>) than or equal to 18
+// Push fans[i] to vipSection array
+
+for (let i = 0; i < fans.length; i++) {
+  if (fans[i][0] === 'J' && ages[i] >= 18){
+    vipSection.push(fans[i]);
+  }
+}
+console.log('VIPS', vipSection);
