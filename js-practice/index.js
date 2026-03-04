@@ -1098,3 +1098,52 @@ for (let i = 0; i < fans.length; i++) {
   }
 }
 console.log('VIPS', vipSection);
+
+//.Slice review
+
+highScores = [500, 450, 400, 350, 300];
+let podium = highScores.slice(0, 3);
+
+console.log(podium);
+
+//.splice review
+
+inventory = ["Apples", "Oranges", "Pears"];
+
+inventory.splice(1, 1, "Grapes");
+
+console.log(inventory);
+
+//.slice
+jackets = ["Puffer", "Denim", "Leather", "Parka", "Blazer", "Trench"]
+let windows = jackets.slice(2, 4)
+
+console.log('Window Display', windows);
+
+//.splice
+cart = ["Laptop", "Phone", "Tablet", "Mouse", "Keyboard"]
+
+cart.splice(2, 1, "Headphones");
+console.log('Cart', cart);
+
+//.slice
+
+signUps = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+let earlyBirds = signUps.slice(0, 2);
+
+console.log('SignUps', signUps);
+console.log('Earlybirds', earlyBirds);
+
+//.splice
+
+menu = ["Cupcake", "Croissant", "Muffin", "Brownie"]
+
+menu.splice(1, 1)
+console.log(menu);
+
+
+
+
+
+
