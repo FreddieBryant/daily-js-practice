@@ -1130,6 +1130,12 @@ console.log('Cart', cart);
 
 signUps = ["Alice", "Bob", "Charlie", "David", "Eve"]
 
+//Puedo-code 
+//Use earlyBirds at a variable G
+//Go to index [0], then target index[2] 
+//This will show 'Alice' and 'Bob'
+//Log signUps the Log earlyBirds
+
 let earlyBirds = signUps.slice(0, 2);
 
 console.log('SignUps', signUps);
@@ -1143,7 +1149,54 @@ menu.splice(1, 1)
 console.log(menu);
 
 
+//Mapping
 
+namesList2 = ["Alice", "Bob", "Charlie"]
+notificatons = [];
 
+// Psuedo-code
+// Start at index 0.
+// Stop at names.length.
+// For every name, create a new string: names[i] + " - Order Ready!".
+// push that new string into notifications.
 
+for (let i = 0; i < namesList2.length; i++) {
+  notificatons.push(namesList2[i] + ' - Order Ready!');
+}
+console.log(notificatons);
 
+// I need help
+
+prices = [5, 10, 15];
+formattedPrices = [];
+
+// Pseudo-code:
+
+// Loop through prices.
+
+// For each one, combine "$" + prices[i].
+
+// Push the result of that combination into formattedPrices.
+
+for (let i = 0; i < prices.length; i++) {
+  formattedPrices.push('$' + prices[i]);
+}
+console.log(formattedPrices);
+
+//not working
+
+originalPrices = [10, 20, 30, 40];
+discounts = [];
+
+// Start the loop at index 0.
+
+// Stop at the end of originalPrices.
+
+// Take the number at the current index and multiply by 0.1.
+
+// Push that result into the discounts array.
+
+for(let i = 0; i < originalPrices.length; i++) {
+  discounts.push(originalPrices [i] * 0.1);
+}
+console.log('Discount', discounts);
