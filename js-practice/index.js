@@ -1199,4 +1199,74 @@ discounts = [];
 for(let i = 0; i < originalPrices.length; i++) {
   discounts.push(originalPrices [i] * 0.1);
 }
-console.log('Discount', discounts);
+console.log('Discounts', discounts);
+
+//is the shortcut more common. i think i need to practice both.
+//thats all the time I have for today.
+//Is this right.
+//I want to continue practicing thing when I came back from work.
+
+billTotals = [50, 100, 200];
+finalBills2 = [];
+
+for (let i = 0; i < billTotals.length; i++){
+
+let totalWithTax = billTotals[i] * 1.07;
+finalBills2.push(totalWithTax);
+}
+
+console.log('Final Bills', finalBills2);
+
+words = ["hello", "stop", "go"]
+shoutedWords = [];
+// Start the loop at index 0.
+
+// Stop at the end of words.
+
+// Target shoutedWords and add(+) '!!!'
+
+// Push that result into the shoutedWords array.
+
+for (let i = 0; i < words.length; i++) {
+  shoutedWords.push(words[i] + '!!!');
+}
+console.log('Shout', shoutedWords);
+
+//I had some trouble with the long version.
+//Can I try one more long and one more short version?
+//Storing the value is throwing me off a little.
+
+//Long version mapping practice(holding tray)
+
+
+
+grades = [70, 85, 90]
+curvedGrades = [];
+
+//Psuedo-code
+//Loop through grades
+//Declare variable newGrades 
+//Set newGrade Equal to grades[i] + 5
+//Push newGrade to curvedGrades
+
+for (let i = 0; i < grades.length; i++) {
+  let newGrade = grades[i] + 5;
+  curvedGrades.push(newGrade);
+}
+console.log(curvedGrades);
+
+
+users = ["pro_coder", "web_dev", "js_learner"]
+newUsernames = [];
+
+//Psuedo-code
+//loop through users
+//Push users[i] + '2026' to newUsernames
+//Log newUsernames
+
+for (let i = 0; i < users.length; i++) {
+  newUsernames.push(users[i] + '2026');
+}
+console.log('Users', newUsernames);
+
+// if I wanted a space 
