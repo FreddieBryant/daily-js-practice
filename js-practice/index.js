@@ -1240,7 +1240,7 @@ console.log('Shout', shoutedWords);
 
 
 
-grades = [70, 85, 90]
+grades = [70, 85, 90];
 curvedGrades = [];
 
 //Psuedo-code
@@ -1269,4 +1269,56 @@ for (let i = 0; i < users.length; i++) {
 }
 console.log('Users', newUsernames);
 
-// if I wanted a space 
+// if I wanted a space between users[i] is there another way besides ' 2026'?
+// And also it is time for me to go to work so can I get save data?
+
+//concatenatetion an template literals
+
+// guests = ["Tony", "Sara"]
+
+// for (let i = 0; i < guests.length; i++) {
+//   console.log(guest[i] + 'is in seat' +i);
+// }
+
+// for (let i = 0; i < guests.length; i++) {
+//   // Use backticks and ${}
+//   console.log(`${guests[i]} 'is in seat' ${i}`);
+// }
+
+//I cant understand the explaination unless you show me the whole thing worked
+//I dont understand console.log(guest[i] + 'is in seat' +i)
+//or console.log(`${guests[i]} is in seat ${i}`);
+//because i do not know what to put where 'is in seat' is
+//and i do not no if i need to declare a variable for this to work
+
+let guests2 = ["Tony", "Sara"];
+
+for (let i = 0; i < guests2.length; i++) {
+  // Glue: Name + " " + "is in seat" + " " + Number
+  console.log(guests2[i] + ' is in seat ' + i);
+}
+
+let guests3 = ["Tony", "Sara"];
+
+for (let i = 0; i < guests3.length; i++) {
+  // Everything inside the `` is just plain text, EXCEPT the ${} parts
+  console.log(`${guests3[i]} is in seat ${i}`);
+}
+//yes the sid by side helps
+//the pro way seems like more with the backticks $ sign and brackets.
+//let me try a template literal problem before i go to work
+
+// let fruit = "Apples"
+// let amount = 5;
+
+// for (let i = 0; i < Apples.length; i++){ 
+//   console.log(`${fruit[i]} I have 5 Apples ${i}`);
+// }
+
+//still no idea
+
+let name2 = "Tony";
+let age = 25;
+
+console.log(`${name2} is ${age} years old`);
+
