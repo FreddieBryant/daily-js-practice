@@ -1345,13 +1345,140 @@ let user = "DevMode"; let status = "Online";
 //Do I need to indent the console.log?
 //Sorry for so many questions
 
+//Double Transformation
+
+prices = [10, 20, 30];
+receipts = [];
+
+// Loop through prices.
+
+// Step 1 (The Holding Tray): Create a variable totalWithTax that is prices[i] * 1.07.
+
+// Step 2 (The Template): Use a backtick sentence to format that totalWithTax (e.g., `Total: $${totalWithTax}`).
+
+// Step 3: push that sentence into receipts.
+
+for (let i = 0; i < prices.length; i++) {
+  let totalWithTax = prices[i] * 1.07;
+  receipts.push(`Total: ${totalWithTax. toFixed(2)}.`)
+}
+console.log(receipts);
+// I refreshed the page because I lost my side scroll bar.
+// I lost this problem.
+// This is what the log shows (3) ['Total: 21.400000000000002.', 'Total: 21.400000000000002.', 'Total: 21.400000000000002.'] 
+// What is wrong?
+
+for (let i = 0; i < prices.length; i++) {
+  let totalWithTax = prices[i] * 1.07;
+  receipts.push(`Total: ${totalWithTax. toFixed(2)}.`)
+}
+console.log(receipts);
+
+//log displays
+//(3) ['Total: 10.70.', 'Total: 21.40.', 'Total: 32.10.']
+//is this correct?
+//I want to try another one
+
+players = ["Zelda", "Link", "Mario"];
+badges = [];
+
+// Loop through players.
+
+// Step 1 (The Tray): Create a variable called badgeName.
+
+// Step 2 (The Template): Set badgeName equal to a Template Literal that looks like this: Player #0: Zelda (using ${i} and ${players[i]}).
+
+// Step 3: push that variable into the badges array
+
+for (let i = 0; i < players.length; i++) {
+  badgeName = (`Player #0: ${players[i]}, Player #1: ${players[i]}, Player #2: ${players[i]}`) 
+  badges.push(badgeName);
+}
+console.log("Badge", badgeName);
+
+//I barely got that because I didnt know what you wanted the sentence to look like
 
 
+fruits = ["Apple", "Banana", "Cherry"];
+inventory = [];
+
+//psuedo-code
+//loop through fruits
+//set call label and set it to string using backtick
+//push the label inventory array
+
+for (let i = 0; i < fruits.length; i++){
+  label = (`Shelf #${i}: ${fruits[i]}`);
+  inventory.push(label);
+}
+console.log(inventory);
+
+winners = ["Alex", "Blake", "Casey"]
+rankings = []
+
+//loop through winners
+//set place equal to string using backtick
+//push place to rankings array
+
+for (let i = 0; i < winners.length; i++) {
+  rank = (`Place #${i + 1}: ${winners[i]}`);
+  rankings.push(rank);
+}
+console.log('Place', rankings);
+
+//I need another long one
+
+fans = ["Avery", "Jordan", "Taylor"];
+ticketPrefix = "CONCERT-2026";
+logs = [];
+
+//psuedo
+//loop through fans
+//set entryLog = to something
+
+for (let i = 0; i < fans.length; i++){
+  entryLog = (`${ticketPrefix} ${fans[i]} (ID: ${i})`);
+  logs.push(entryLog);
+}
+console.log(logs);
+
+//index.js:1440 Uncaught SyntaxError: missing ) after argument list (at index.js:1440:43)
 
 
+books = ["The Hobbit", "1984"];
+labels = [];
+
+// Goal: Create the sentence: "Title: The Hobbit [Shelf: 0]"
+
+//loop throught books
+//create variable let bookLabel
+//set equal to backtick sentence
+//push bookLabel to labels
+
+for(let i = 0; i < books.length; i++) {
+  bookLabel = (`Title: ${books[i]} [Shelf: ${i}]`)
+  labels.push(bookLabel);
+}
+//the reason i put 0 is beacause it say goal: Create the sentence: "Title: The Hobbit [Shelf: 0]"
+
+//Long Version
+// let bookLabel = `Title: ${books[i]} [Shelf: ${i}]`;
+// labels.push(bookLabel)
+
+//Short Version
+// labels.push(`Title: ${books[i]} [Shelf: ${i}]`)
+console.log('Book Label', labels)
 
 
+members = ["Alex", "Blake"]
+list = [];
 
+//loop throught members
+//create variable(you do not need to)
+//push backtick sentence to list
+//log list
 
-
-
+for(let i = 0; i < members.length; i++) {
+  list.push(`Member: ${members[i]}`)
+}
+console.log('Members', list);
