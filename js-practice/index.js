@@ -1322,3 +1322,36 @@ let age = 25;
 
 console.log(`${name2} is ${age} years old`);
 
+//I need to practice more template literals when I get off of work or tomorrow
+//I am just used to concatenation
+//I few more practice problems and I should be ok
+//Can I get save data
+
+//Template literals
+
+let city = "Miami"; let temp = 80;
+  console.log(`It is ${temp} in ${city}!`);
+
+let item = "Pizza"; let price = 15;
+  console.log(`Your ${item} costs $${price}.`)
+
+let user = "DevMode"; let status = "Online";
+  console.log(`User ${user} is currently ${status}.`)
+
+//Is it okay to add the (!) mark and the periods(.) at the end the way I did?
+//Are the Let city and let item = variables or objects?
+//And I just learned from this that they can go on the same line.
+//Is it okay that I put the console.log directly under the let city = 
+//Do I need to indent the console.log?
+//Sorry for so many questions
+
+
+
+
+
+
+
+
+
+
+
