@@ -1535,5 +1535,57 @@ for (let i = 0; i < students.length; i++) {
 }
 console.log('Student Scores', results);
 
+//is this better
+
 //I got to go to work
 //I may need to practice another one when I return
+
+items = ["Shirt", "Shoes", "Hat"];
+prices2 = [20, 50, 15];
+storeLog = [];
+
+//loop through items
+//push backtick sentence to storeLog
+//Log storeLog
+
+for (let i = 0; i < items.length; i++) {
+  storeLog.push(`${items[i]}:, $${(prices2[i] * 1.07).toFixed(2)}`);
+}
+console.log('Final Price', storeLog);
+
+//I struggled with this
+//Did I get It right
+//If i did can I try another one just like this
+
+// Scenario: You are selling concert tickets. You have a list of Fan Names and their Base Ticket Price. You need to add a $5.00 convenience fee to every ticket
+
+fans = ["Avery", "Jordan", "Taylor"];
+basePrices = [45, 60, 80];
+finalTickets = [];
+
+//psuedo-code
+//loop through fans
+//push backtick sentence that adds five dollars to basePrices to finalTickets[]
+//log finalTickets
+
+for (let i = 0; i < fans.length; i++) {
+  finalTickets.push(`${fans[i]}: $${(basePrices[i] + 5.00).toFixed(2)}`);
+}
+console.log('Final Ticket Price', finalTickets);
+
+// Final Ticket Price (3) ['Avery:, $function toFixed() { [native code] }', 'Jordan:, $function toFixed() { [native code] }', 'Taylor:, $function toFixed() { [native code] }']
+
+//I dont know what went wrong
+
+diners = ["Mom", "Dad"];
+bills = [25, 30];
+totalWithTip = [];
+
+//loop through diners
+//backtick sentence added 20% (1.20) to bills. push to totalTip[]
+//log totalTip
+
+for(let i = 0; i < diners.length; i++) {
+  totalWithTip.push(`${diners[i]}: $${(bills[i] * 1.20).toFixed(2)}`);
+}
+console.log('Total With Tip', totalWithTip);
