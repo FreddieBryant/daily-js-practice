@@ -1577,6 +1577,11 @@ console.log('Final Ticket Price', finalTickets);
 
 //I dont know what went wrong
 
+
+
+// The "Tax & Tip" Challenge
+// Since you hit that "Native Code" speed bump, let's do one more to smooth it out. This time, we'll calculate a 20% Tip.
+
 diners = ["Mom", "Dad"];
 bills = [25, 30];
 totalWithTip = [];
@@ -1589,3 +1594,7 @@ for(let i = 0; i < diners.length; i++) {
   totalWithTip.push(`${diners[i]}: $${(bills[i] * 1.20).toFixed(2)}`);
 }
 console.log('Total With Tip', totalWithTip);
+
+//is it correct?
+//time for me to save and got to work
+//Next level 3
