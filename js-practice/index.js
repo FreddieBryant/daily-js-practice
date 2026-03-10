@@ -1482,3 +1482,58 @@ for(let i = 0; i < members.length; i++) {
   list.push(`Member: ${members[i]}`)
 }
 console.log('Members', list);
+
+//I'm gonna take a break.
+//Did I get if right?
+//I would like to practice a couple more when I get back
+//or I may be done for today
+
+prices = [100, 200, 300];
+saleTags = [];
+
+//psuedo code
+//loop through price
+//push backtick sentence to saleTags array
+//log saleTags
+
+for (let i =0; i < prices.length; i++) {
+  saleTags.push(`Sale: ${prices[i] * 0.9}`);
+}
+console.log('Sale Prices', saleTags);
+
+//can I try another?
+
+orders = [10, 25, 50];
+finalBills = [];
+
+//psuedo code
+//loop through orders
+//push final fee backtick sentence to finalBills array
+//log finalBills
+
+for (let i = 0; i < orders.length; i++) {
+  finalBills.push(`Final Bill: $${ (orders[i] * 1.15).toFixed(2) }`);
+}
+console.log('Final Bill', finalBills);
+
+
+
+//Why two $$ in front of $${(orders)}
+//I need another one
+
+students = ["Alex", "Blake", "Casey"];
+scores = [85, 92, 78];
+results = [];
+
+//psuedo code
+//loop through orders
+//push Student scores backtick sentence to scores array
+//log scores
+
+for (let i = 0; i < students.length; i++) {
+  results.push(`${students[i]} scored ${scores[i]}`);
+}
+console.log('Student Scores', results);
+
+//I got to go to work
+//I may need to practice another one when I return
