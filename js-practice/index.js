@@ -1598,3 +1598,50 @@ console.log('Total With Tip', totalWithTip);
 //is it correct?
 //time for me to save and got to work
 //Next level 3
+
+
+
+// Scenario: You are a teacher. You have a list of students and their scores. You need to create a list that says "Pass" if the score is 70 or higher, and "Fail" if it’s lower.
+
+students = ["Alex", "Blake", "Casey"];
+scores = [90, 50, 85];
+reportCards = [];
+
+
+
+//loop through students array
+//IF score[i] >= 70 pass
+//ELSE fail
+
+for (let i = 0; i < students.length; i++) {
+  if (scores[i] >= 70) {
+    reportCards.push(`${students[i]}: Pass`)
+  }
+  else {
+    reportCards.push(`${students[i]}; Fail`)
+  }
+}
+console.log(reportCards);
+
+//I dont know how to get pass and fail. i think there should be an === pass or fail somewhere
+
+// Scenario: You are running a website. If a customer spends $50 or more, they get "Free Shipping." Otherwise, it costs "$5.00."
+
+customers = ["Sam", "Jo", "Lou"];
+totals = [60, 30, 100];
+shippingStatus = [];
+
+//loop through customers
+//IF total is (>=) 50: free shipping.(backtick sentence)
+//ELSE $5.00 (backtick sentence)
+//Log Shipping staatus
+
+for (let i = 0; i < customers.length; i++){
+  if(totals[i] >= 50){
+    shippingStatus.push(`${customers[i]}; Free`)
+  }
+  else {
+    shippingStatus.push(`${customers[i]}; $5.00`)
+  }
+}
+console.log(shippingStatus);
