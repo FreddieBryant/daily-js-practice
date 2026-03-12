@@ -1631,6 +1631,7 @@ customers = ["Sam", "Jo", "Lou"];
 totals = [60, 30, 100];
 shippingStatus = [];
 
+//Psuedo-code
 //loop through customers
 //IF total is (>=) 50: free shipping.(backtick sentence)
 //ELSE $5.00 (backtick sentence)
@@ -1638,10 +1639,40 @@ shippingStatus = [];
 
 for (let i = 0; i < customers.length; i++){
   if(totals[i] >= 50){
-    shippingStatus.push(`${customers[i]}; Free`)
+    shippingStatus.push(`${customers[i]}: Free`)
   }
   else {
-    shippingStatus.push(`${customers[i]}; $5.00`)
+    shippingStatus.push(`${customers[i]}: $5.00`)
   }
 }
 console.log(shippingStatus);
+
+//did I get it right.
+//I need to save and go to work.
+//I want to practice more like this when I get home.
+
+// Scenario: You are a gym manager.
+
+// If a member has visited more than 20 times, they are a "Gold Member."
+
+// If they have visited 20 times or fewer, they are a "Silver Member."
+
+names = ["Ray", "Mia"];
+visits = [25, 10];
+status = [];
+
+//loop through names
+//IF member names[i] has visted more that 2 times
+//PUSH backtick sentence visits > 20 = 'Gold Member'
+//ELSE 'Silver Member'
+//LOG status
+
+for (let i = 0; i < names.length; i++) {
+  if (visits[i] > 20) {
+    status.push(`${names[i]}: Gold Member`)
+  }
+  else {
+    status.push(`${names[i]}: Silver Member`)
+  }
+}
+console.log(status);
