@@ -1651,15 +1651,17 @@ console.log(shippingStatus);
 //I need to save and go to work.
 //I want to practice more like this when I get home.
 
+//I'm back
+
 // Scenario: You are a gym manager.
 
 // If a member has visited more than 20 times, they are a "Gold Member."
 
 // If they have visited 20 times or fewer, they are a "Silver Member."
 
-names = ["Ray", "Mia"];
-visits = [25, 10];
-status = [];
+// names = ["Ray", "Mia"];
+// visits = [25, 10];
+// status = [];
 
 //loop through names
 //IF member names[i] has visted more that 2 times
@@ -1667,12 +1669,82 @@ status = [];
 //ELSE 'Silver Member'
 //LOG status
 
+// for (let i = 0; i < names.length; i++) {
+//   if (visits[i] > 20) {
+//     status.push(`${names[i]}: Gold Member`)
+//   }
+//   else {
+//     status.push(`${names[i]}: Silver Member`)
+//   }
+// }
+// console.log(status);
+
+//I am little unsure about this
+
+// Gold: Over 20 visits.
+
+// Silver: 10 to 20 visits.
+
+// Bronze: Under 10 visits.
+
+names = ["Ray", "Mia", "Leo"];
+visits = [25, 10, 5];
+status = [];
+
+//loop through names
+//IF member names[i] has visted more that 20 times
+//PUSH backtick sentence visits > 20 = 'Gold Member'
+//IF member visits more than > 10 times but <= 20 = 'Silver Member'
+//ELSE 'Bronze Member'
+//LOG status
+
 for (let i = 0; i < names.length; i++) {
   if (visits[i] > 20) {
-    status.push(`${names[i]}: Gold Member`)
+    status.push(`${names[i]}: Gold Member`);
+  }
+  else if (visits[i] > 10 &&  visits[i] <= 20) {
+    status.push(`${names[i]}: Silver Member`);
   }
   else {
-    status.push(`${names[i]}: Silver Member`)
+    status.push(`${names[i]}: Bronze Member`);
   }
 }
 console.log(status);
+
+//I wrote the psuedo-code and did this without looking at the answer.
+//Is it correct?
+
+// 🎢 Level 3: The "Theme Park" Challenge
+// Scenario: You are coding the entry gate for a theme park. Prices are based on age:
+
+// Adults (18+): Pay "$50"
+
+// Youth (5–17): Pay "$30"
+
+// Kids (Under 5): Pay "Free"
+
+guests = ["Alex", "Blake", "Casey"];
+ages = [25, 12, 3];
+tickets = [];
+
+//loop through guests 
+//IF ages is greater than (>) 18
+//PUSH backtick sentence Pay $50 to tickets array
+//ELSE IF age 15 -17 
+//PUSH backtick sentence Pay $30 to tickets array
+//ELSE PUSH backtick sentence Free to tickets array
+//LOG tickets
+
+for (let i = 0; i < guests.length; i++) {
+  if (ages[i] >= 18) {
+    tickets.push(`${guests[i]}; Pay $50`);
+  }
+  else if (ages[i] >= 5) {
+    tickets.push(`${guests[i]}: Pay $30`);
+  }
+  else {
+    tickets.push(`${guests[i]}: Free`)
+  }
+}console.log(tickets);
+
+// is this correct?
