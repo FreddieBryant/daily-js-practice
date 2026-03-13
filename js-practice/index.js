@@ -1748,3 +1748,67 @@ for (let i = 0; i < guests.length; i++) {
 }console.log(tickets);
 
 // is this correct?
+
+// 🎒 Challenge 1: The "Bulk Discount" (Math + Formatting)
+// Scenario: You're selling coffee beans. If someone buys more than 5 bags, they get a discount.
+
+names2 = ["Alice", "Bob"]; 
+bags = [10, 3]; 
+finalPrice = [];
+let pricePerBag = 15;
+
+
+// Math: (bags[i] * pricePerBag).
+// Goal: Use a one-liner to push: "Alice: $150.00".
+
+//loop htrough names
+//IF bags[i] > 5
+//PUSH `sentence` to  finalPrice
+//Log finalPrice
+
+for (let i = 0; i < names2.length; i++) {
+  if(bags[i] > 5) {
+    finalPrice.push(`${names2[i]}: ${(bags[i] * pricePerBag).toFixed(2)} `);
+  }
+} 
+console.log(finalPrice);
+
+// 🎒 Challenge 2: The "Speed Trap" (Logic + Two Arrays)
+// Scenario: You're a state trooper.
+
+drivers = ["Speedy", "Slowy"]; 
+speeds = [85, 60];
+limits = [];
+
+// Logic: If speed is over 70, push "Speedy: Ticket". Otherwise, push "Slowy: Safe".
+
+//loop through drivers
+//IF speed > 70
+//PUSH `Speedy: Ticket sentence` to limits
+//ELSE PUSH 'Slowly Safe sentence' to limits
+//Log Limits
+
+for(let i = 0; i < drivers.length; i++) {
+  if(speeds > 70){
+    limits.push(`${drivers[i]}: Ticket`);
+  }
+  else {
+    limits.push(`${drivers[i]}: Safe`);
+  }
+}
+console.log(limits);
+//Cant get Ticket to work
+
+sizes = ["Small", "Large", "Mega"];
+prices3 = [2.00, ,3.00, 5.00];
+ounces = [8, 16, 32];
+priceTier = [];
+
+//loop through sizes
+//Push sentence to priceTier
+
+for (let i = 0; i < sizes.length; i++) {
+  priceTier.push(`${ounces[i]}oz: $${(prices3[i])}`);
+}
+console.log(priceTier);
+//I tried
