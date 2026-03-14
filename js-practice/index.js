@@ -1761,7 +1761,7 @@ let pricePerBag = 15;
 // Math: (bags[i] * pricePerBag).
 // Goal: Use a one-liner to push: "Alice: $150.00".
 
-//loop htrough names
+//loop through names
 //IF bags[i] > 5
 //PUSH `sentence` to  finalPrice
 //Log finalPrice
@@ -1789,7 +1789,7 @@ limits = [];
 //Log Limits
 
 for(let i = 0; i < drivers.length; i++) {
-  if(speeds > 70){
+  if(speeds[i] > 70){
     limits.push(`${drivers[i]}: Ticket`);
   }
   else {
@@ -1800,15 +1800,64 @@ console.log(limits);
 //Cant get Ticket to work
 
 sizes = ["Small", "Large", "Mega"];
-prices3 = [2.00, ,3.00, 5.00];
 ounces = [8, 16, 32];
 priceTier = [];
 
 //loop through sizes
 //Push sentence to priceTier
 
+// for (let i = 0; i < sizes.length; i++) {
+//   priceTier.push(`${ounces[i]}oz: $${(prices3[i])}`);
+// }
+// console.log(priceTier);
+//I tried
+
+//I gotta go to Work and I did not get to review the corrects yet. Please leave them up so I can review them before a decide if I should move on to objects. and give me save data.
+
 for (let i = 0; i < sizes.length; i++) {
-  priceTier.push(`${ounces[i]}oz: $${(prices3[i])}`);
+  if (ounces[i] === 32) {
+    priceTier.push(`${sizes[i]}: $5.00`);
+  } else if (ounces[i] === 16) {
+    priceTier.push(`${sizes[i]}: $3.00`);
+  } else {
+    priceTier.push(`${sizes[i]}: $2.00`);
+  }
 }
 console.log(priceTier);
-//I tried
+
+//i'm back
+//one more like challenge 3
+
+// 🎒 Challenge 4: The "Streaming Service"
+// Scenario: You are coding the billing system for a movie app.
+
+// "Premium" account: costs $20
+
+// "Standard" account: costs $10
+
+// "Basic" account: costs $
+
+users = ["Eva", "Max", "Zoe"];
+plans = ["Premium", "Basic", "Standard"];
+bills = [];
+
+//loop through users
+//IF plans[i] === "premium"
+//PUSH sentence`users[i] = $20
+//ELSE IF plans[i]=== "Standard"
+//PUSH sentence users === $10
+//ELSE PUSH sentence users[i]===5 to bills
+//LOG bills
+
+for (let i = 0; i < users.length; i++){
+  if(plans[i] === 'Premium') {
+    bills.push(`${users[i]}: $20`);
+  }
+  else if(plans[i] === 'Basic') {
+    bills.push(`${users[i]}: $10`);
+  }
+  else {
+    bills.push(`${users[i]}: $5`);
+  }
+}
+console.log(bills);
