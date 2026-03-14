@@ -1861,3 +1861,9 @@ for (let i = 0; i < users.length; i++){
   }
 }
 console.log(bills);
+
+//I am still struggling through this a little.
+//I need to go to work
+//should I move on to objects tomorrow and just review these challenges again later?
+//I also need save data 
+//Muiltiple array headache left behind
