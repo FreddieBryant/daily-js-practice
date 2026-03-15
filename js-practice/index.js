@@ -1867,3 +1867,12 @@ console.log(bills);
 //should I move on to objects tomorrow and just review these challenges again later?
 //I also need save data 
 //Muiltiple array headache left behind
+
+// let students = ["Alex", "Blake", "Casey", "Drew"];
+
+// Task: I want to remove "Blake" and "Casey" and replace them with "Zoe".
+// students.splice(1, 2, "Zoe");
+
+// console.log(students);
+
+// students = ['Alex', 'Zoe','Drew'];
