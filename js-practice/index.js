@@ -1876,3 +1876,4 @@ console.log(bills);
 // console.log(students);
 
 // students = ['Alex', 'Zoe','Drew'];:
+// deleted .code folder
