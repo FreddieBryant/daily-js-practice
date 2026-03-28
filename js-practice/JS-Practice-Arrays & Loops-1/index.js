@@ -6,7 +6,7 @@
 
 // Write a function that takes two numbers and returns the maximum of the two.
 
-// 
+//
 
 // let number = max(3, 4);
 // console.log(number);
@@ -35,9 +35,8 @@
 // cleanest code
 
 function max(num1, num2) {
-  return (num1 > num2) ? num1 : num2; 
-} 
-
+  return num1 > num2 ? num1 : num2;
+}
 
 // let number = max(2, 1);
 // console.log(number);
@@ -46,11 +45,8 @@ function max(num1, num2) {
 //   return(num1 > num2) ? num1 : num2;
 // }
 
-
-
-
 // let area = isLandscape (100, 50);
-// console.log(area);  
+// console.log(area);
 
 // function isLandscape(width, height) {
 //   if (width > height) return true;
@@ -58,10 +54,9 @@ function max(num1, num2) {
 // }
 // with condional operation instead
 
-function isLandscape (width,  height) {
-  return (width > height)
+function isLandscape(width, height) {
+  return width > height;
 }
-
 
 // console.log(firstName);
 
@@ -71,8 +66,6 @@ function isLandscape (width,  height) {
 // Cannot contain a space or a hyphen (-)
 // They are case sensitive
 
-
-
 // is phone in landscape mode
 
 // log the width and height and the console
@@ -81,10 +74,9 @@ function isLandscape (width,  height) {
 
 console.log(isLandscape(150, 100));
 
-function isLandscape(width, height){
-  return (width > height);
+function isLandscape(width, height) {
+  return width > height;
 }
-
 
 // The max of two numbers
 // return the max of two numbers
@@ -95,11 +87,8 @@ let number = max(500, 550);
 console.log(number);
 
 function max(num1, num2) {
-  return (num1 > num2) ? num1 : num2;
+  return num1 > num2 ? num1 : num2;
 }
-
-
-
 
 checkSpeed(130);
 
@@ -119,19 +108,14 @@ function checkSpeed(speed) {
   let kmPerPoint = 5;
 
   if (speed < speedLimit + kmPerPoint) {
-    console.log('Okay');
+    console.log("Okay");
     return;
   }
-    
-  const points = Math.floor((speed - speedLimit) / (kmPerPoint));
-  if (points >= 12)
-    console.log('License Suspended');
-  else
-    console.log('Points', points);
+
+  const points = Math.floor((speed - speedLimit) / kmPerPoint);
+  if (points >= 12) console.log("License Suspended");
+  else console.log("Points", points);
 }
-
-
-
 
 // fizzbuzz algorithim
 // If the Input is not a number Return NaN
@@ -143,36 +127,29 @@ function checkSpeed(speed) {
 const output = fizzBuzz(7);
 console.log(output);
 
-
-function fizzBuzz(input){
-  if (typeof input !== 'number')
-    return NaN;
-  if (input % 3 === 0 && input % 5 === 0)
-    return 'FizzBuzz'
-  if (input % 3 === 0)
-    return 'Fizz'
-  if (input % 5 === 0)
-    return 'Buzz'
+function fizzBuzz(input) {
+  if (typeof input !== "number") return NaN;
+  if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+  if (input % 3 === 0) return "Fizz";
+  if (input % 5 === 0) return "Buzz";
   return input;
 }
-
 
 showNumbers(10);
 
 // Show Number and whether it is 'EVEN' or 'ODD' string next to it
-// Hint message 
+// Hint message
 // Loop: start index at zero and as long as the index is lest than the limit Increment the index.
 // If the index in a multiple of 2, set message to 'EVEN;
 // ELSE set messge to 'ODD
-//Log Index and Messege 
+//Log Index and Messege
 
 function showNumbers(limit) {
   for (let i = 0; i <= limit; i++) {
-    let message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+    let message = i % 2 === 0 ? "EVEN" : "ODD";
     console.log(i, message);
-  }  
+  }
 }
-
 
 // Pseudo-code for showProperties
 // Define a function that takes an object as an input.
@@ -181,14 +158,13 @@ function showNumbers(limit) {
 // IF the value is a string:
 // Display both the key name and its value.
 
-
 const movie = {
-  director: 'a',
-  movieName : 'b',
+  director: "a",
+  movieName: "b",
   releaseYear: 2026,
   movieLength: 2.5,
-  bestActor: 'c',
-  nextMovie: 'd'
+  bestActor: "c",
+  nextMovie: "d",
 };
 
 // Display all 'strings' in obj
@@ -196,19 +172,15 @@ const movie = {
 showProperties(movie);
 
 function showProperties(obj) {
-  for (let key in obj) 
-    if(typeof obj[key] === 'string')
-    console.log(key, obj[key]);
+  for (let key in obj) if (typeof obj[key] === "string") console.log(key, obj[key]);
 }
-
-
 
 // const array = [ 2, null, 5, 6, 9];
 // console.log(countTruthy(array));
 
 // //display number of truthy values in array
 
-// function countTruthy(array) { 
+// function countTruthy(array) {
 //   let count = 0;
 
 //   for (let value of array)
@@ -216,9 +188,6 @@ function showProperties(obj) {
 //       count++;
 //   return count;
 // }
-
-
-
 
 console.log(sum(10));
 
@@ -230,17 +199,14 @@ console.log(sum(10));
 // If the index is a multiple of 3 or a multiple of five add the current number to the sum(+=)
 //Return the sum;
 
-
 function sum(limit) {
   let sum = 0;
-  
-  for (let i = 0; i <= limit; i++) {
-    if (i % 3 === 0 || i % 5 === 0)
-      sum += i;
-  } 
-  return sum;  
-}
 
+  for (let i = 0; i <= limit; i++) {
+    if (i % 3 === 0 || i % 5 === 0) sum += i;
+  }
+  return sum;
+}
 
 const array = [80, 80, 50];
 console.log(calculateGrade(array));
@@ -254,56 +220,43 @@ console.log(calculateGrade(array));
 
 function calculateGrade(marks) {
   let average = calculateAverage(marks);
-  
-  if (average < 60) return 'F'
-  if (average < 70) return 'D'
-  if (average < 80) return 'C'
-  if (average < 90) return 'B'
-  return 'A';
+
+  if (average < 60) return "F";
+  if (average < 70) return "D";
+  if (average < 80) return "C";
+  if (average < 90) return "B";
+  return "A";
 }
 
 function calculateAverage(array) {
   let sum = 0;
   for (let value of array) {
-   sum += value; 
-  }  
+    sum += value;
+  }
   return sum / array.length;
 }
- 
-
-
-
 
 showStars(5);
 
 function showStars(rows) {
-  for (let row = 1; row <= rows; row++){
-
-    let pattern = '';
-    for (let i = 0; i <= row; i++)
-      pattern += '*';
+  for (let row = 1; row <= rows; row++) {
+    let pattern = "";
+    for (let i = 0; i <= row; i++) pattern += "*";
     console.log(pattern);
   }
 }
-  
-
 
 showPrimes(10);
 
 // Show all prime numbers until limit
 
 function showPrimes(limit) {
-  for (let number = 2; number <= limit; number++)
-    if (isPrime(number)) console.log(number);
+  for (let number = 2; number <= limit; number++) if (isPrime(number)) console.log(number);
 }
 
 function isPrime(number) {
-  for(let factor = 2; factor < number; factor++)
-    if(number % factor === 0)
-  
-  return true;
+  for (let factor = 2; factor < number; factor++) if (number % factor === 0) return true;
 }
- 
 
 // function getMax(array) {
 //   let max = array;
@@ -311,7 +264,7 @@ function isPrime(number) {
 //   for (let value of array){
 //     if (value > max) {
 //       max = value;
-//     }   
+//     }
 //   }
 //   return max;
 // }
@@ -336,9 +289,6 @@ function isPrime(number) {
 //   return count;
 // }
 
-
-
-
 // function reverseArray(array) {
 //   let output = [];
 
@@ -352,8 +302,8 @@ function isPrime(number) {
 // const numbers = [10, 20, 30];
 
 // function removeItem(array, index) {
-//   let output = [...array]; 
-  
+//   let output = [...array];
+
 //   output.splice(index, 1);
 //   // output.splice(index, howManyItems?);
 
@@ -361,8 +311,6 @@ function isPrime(number) {
 // }
 
 //console.log(removeItem(numbers, 1));
-
-
 
 // const numbers = [1, 2, 3, 4];
 // function insertMiddle(array, value) {
@@ -377,13 +325,10 @@ function isPrime(number) {
 
 // const numbers = [10, 20, 30, 40];
 
-
 // output.splice(2, 0, 25);
 
 // const lifted = items.splice(2, 0)[0];
 // items.splice(1, 0, 'cherry');
-
-
 
 // const numbers = [10, 20, 30]
 
@@ -392,18 +337,13 @@ function isPrime(number) {
 //   array.splice(0, 0, 20)
 // }
 
-
-
 // function move(array, index, newIndex) {
 //   const lifted = array.splice(index, 1)[0];
 //   array.splice(newIndex, 0, lifted);
 // }
- 
 
 // colors.splice(1, 1,)[0];
 // colors.splice(1, 0, 'Green', 'Yellow');
-
-
 
 // const groceries = ['Milk', 'Eggs', 'Bread', 'Cheese'];
 
@@ -414,7 +354,6 @@ function isPrime(number) {
 
 // const priorityTask = tasks.splice(1, 1)[0];
 // tasks.splice(0, 0, priorityTask);
-
 
 //  im not doing pseudo-code today try challenge.
 
@@ -432,8 +371,6 @@ function isPrime(number) {
 
 // const protein = cart.splice(1, 2, 'Butter')[1];
 
-
-
 // const lastPerson = line.splice(-1, 2, 'Frank')[1];
 
 // if they go into the box 'David' and then 'Eve' i believe this would be correct.
@@ -449,7 +386,6 @@ function isPrime(number) {
 //Go to position the second to last position on the list, and remove that person, and then add 'New Person'
 
 // Now the line is ['John', Paul, 'New Person', 'James']
-
 
 //create line of five people ['John', Paul, 'Michael', 'James', 'Shawn']
 //SPLICE at Index 0 remove 0 items and add VIP cut in line at the beginning
@@ -481,10 +417,10 @@ function isPrime(number) {
 //END the extraction 5 items from the end.
 //STORE the result in a new variable called cleanData.
 
-const rawData = [...Array(100).keys()]; 
+const rawData = [...Array(100).keys()];
 const cleanData = rawData.slice(10, -5);
 
-console.log(cleanData.length); 
+console.log(cleanData.length);
 
 const shiftHours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -505,8 +441,7 @@ const coreShift = shiftHours.slice(3, -4);
 
 //const realMessage = secretCode.slice(3, -3);
 
-
-//I know this isn't right. I'm rusty on loops now 
+//I know this isn't right. I'm rusty on loops now
 
 // const realMessage = [7, 3, 2, 1];
 // let decrypted = [];
@@ -516,7 +451,6 @@ const coreShift = shiftHours.slice(3, -4);
 //   decrypted.push(newNumber);
 // }
 // console.log(decrypted);
-
 
 // I need a more indept explaination
 
@@ -528,15 +462,13 @@ const coreShift = shiftHours.slice(3, -4);
 
 //   for (let price of cleanPrices) {
 //     let cleanPrices = price + 5.
-//     finalPrices.push(cleanPrices); 
+//     finalPrices.push(cleanPrices);
 //   }
 // console.log(finalPices);
 
 // You have 100 items. You need to "cut off" the first 10 (warm-up) and the last 5 (cool-down).
 
-
 // const cleandata = sensorReading.slice(10, -5);
-
 
 // hourlyFootage.splice(5, 1,);
 // const usefulVideo = hourlyFootage.slice(2, -3);
@@ -553,12 +485,12 @@ const coreShift = shiftHours.slice(3, -4);
 
 // for (let i = 0; i < prices.length; i++) { // i++ means i + 1
 //     // This is where the "$5" logic happens:
-//     prices[i] = prices[i] + 5; 
+//     prices[i] = prices[i] + 5;
 // }
 
 // Result: [15, 25, 35, 45]
 
-let names = ['alice', 'bob', 'charlie']
+let names = ["alice", "bob", "charlie"];
 
 //Start at Index 0
 //Stop before Index Equals the Lenght of prices array
@@ -567,7 +499,7 @@ let names = ['alice', 'bob', 'charlie']
 //I do not know how to capitalize values in an array
 
 //Before the next challenge
-//step 
+//step
 
 let titles = ["manager", "developer", "designer", "intern"];
 //Start at index 0
@@ -615,13 +547,13 @@ let titles = ["manager", "developer", "designer", "intern"];
 
 let boutiquePrices = [100, 250, 500, 1200];
 
-for (let i = 0; i < boutiquePrices.length; i++){
+for (let i = 0; i < boutiquePrices.length; i++) {
   boutiquePrices[i] = boutiquePrices[i] + 25;
 }
 console.log(boutiquePrices);
 
 let salaries = [50000, 60000, 45000, 70000];
-let bonus = 5000
+let bonus = 5000;
 
 // The Pseudo-code Plan:
 // START at index 0.
@@ -657,15 +589,15 @@ let incomes = [40000, 150000, 80000, 250000];
 //STOP before the end the end of the incomes array
 //Step by 1
 //ACTION: if sandwich
- //Target: Original income[i]
- //Calculate: If the income[i] is Greater Then 100000 Subtract 10000
+//Target: Original income[i]
+//Calculate: If the income[i] is Greater Then 100000 Subtract 10000
 
- for (let i = 0; i < incomes.length; i++) {
+for (let i = 0; i < incomes.length; i++) {
   if (incomes[i] > 100000) {
     incomes[i] = incomes[i] - 10000;
   }
- }
- console.log(incomes);
+}
+console.log(incomes);
 
 //  I forgot to Overwright
 
@@ -674,12 +606,12 @@ let guests = ["Guest", "Alice", "Guest", "Bob"];
 //START at INDEX 0
 //STOP before the end of the guests.length
 //TARGET: Original name ='Guest'
- //Action guest[i] (===) 'Guest' update(=) to 'ANONYMOUS'
+//Action guest[i] (===) 'Guest' update(=) to 'ANONYMOUS'
 
 for (let i = 0; i < guests.length; i++) {
-  if (guests[i] === 'Guest'){
-    guests[i] = 'ANONYMOUS'
-  }  
+  if (guests[i] === "Guest") {
+    guests[i] = "ANONYMOUS";
+  }
 }
 console.log(guests);
 
@@ -695,8 +627,8 @@ let inventory = ["Banana", "Apple", "Orange", "Apple", "Pear"];
 //Action: if index  === 'Apple' replace it with = 'SOLD OUT'
 
 for (let i = 0; i < inventory.length; i++) {
-  if (inventory[i] === 'Apple'){
-    inventory[i] = 'SOLD OUT';
+  if (inventory[i] === "Apple") {
+    inventory[i] = "SOLD OUT";
   }
 }
 console.log(inventory);
@@ -704,12 +636,12 @@ console.log(inventory);
 //This is all I have time for. I have to go to Work. Even if I got this right I would like to try another one when I get home to boost my confidence. I stuggled a little bit with this.
 
 // let guestAges = [25, 18, 30, 20, 22, 16];
- 
+
 //Psuedo-code
 //START at index 0
 //STOP before the end of guessAges array
-//Target: guestAges[1] if sandwich; if age is less than (<) 21 
-// Action: replace(=) with 'REJECTED 
+//Target: guestAges[1] if sandwich; if age is less than (<) 21
+// Action: replace(=) with 'REJECTED
 
 // for (let i = 0; i < guestAges.length; i++){
 //   if (guestAges[i] < 21) {
@@ -728,17 +660,16 @@ let ticketPrices = [];
 //Target: (If sandwich) if  guestAges[i] <= 65 tickectPrices  = 30
 //ELSE: ticketPrices = 50;
 
-for(let i = 0; i < guestAges.length; i++) {
+for (let i = 0; i < guestAges.length; i++) {
   if (guestAges[i] >= 65) {
     ticketPrices[i] = 30;
-  }
-  else {
+  } else {
     ticketPrices[i] = 50;
   }
 }
 //why are there two console.log
 console.log("Ages:", guestAges);
-console.log('Prices', ticketPrices);
+console.log("Prices", ticketPrices);
 
 //not understanding why there is an empty array for ticketPrices or where you enter the age.
 
@@ -751,39 +682,36 @@ let finalReceipt = [];
 //Target basePrices[i] if greater than 100 add 10
 //ELSE add 2
 
-for(let i = 0; i < basePrices.length; i++){
-  if(basePrices[i] >= 100){
+for (let i = 0; i < basePrices.length; i++) {
+  if (basePrices[i] >= 100) {
     finalReceipt[i] = basePrices[i] + 10;
-  }
-  else {
+  } else {
     finalReceipt[i] = basePrices[i] + 2;
   }
 }
-console.log('Base Price', basePrices);
-console.log('Final Price', finalReceipt);
+console.log("Base Price", basePrices);
+console.log("Final Price", finalReceipt);
 
 //i struggled through this. let me try another one
-
 
 let guestNames = ["Admin", "Alice", "Admin", "Bob", "Charlie"];
 let badges = [];
 
-//Psuedo - code 
+//Psuedo - code
 // regular start and stop for loop. step by 1
 //Target: if guestNames === 'Admin'
 //Action: badges = 'ACCESS GRANTED'
 //ELSE: badges = 'USER'
 
-for (let i = 0; i < guestNames.length; i++){
-  if (guestNames[i] === 'Admin') {
-    badges[i] = 'ACCESS GRANTED';
-  }
-  else {
-    badges[i] = 'USER';
+for (let i = 0; i < guestNames.length; i++) {
+  if (guestNames[i] === "Admin") {
+    badges[i] = "ACCESS GRANTED";
+  } else {
+    badges[i] = "USER";
   }
 }
-console.log('Guest Name', guestNames);
-console.log('Badge Type', badges);
+console.log("Guest Name", guestNames);
+console.log("Badge Type", badges);
 
 //I think i got instanceof. its break time
 //I may need to refresh when I come back
@@ -815,10 +743,10 @@ let finalBills = [];
 
 // for (let i = 0; i < orders.length; i++) {
 //   if (orders[i] >= 50) {
-    // TOSS the original price onto the final list
-//     finalBills.push(orders[i]); 
+// TOSS the original price onto the final list
+//     finalBills.push(orders[i]);
 //   } else {
-     // TOSS the price + 5 onto the final list
+// TOSS the price + 5 onto the final list
 //     finalBills.push(orders[i] + 5);
 //   }
 // }
@@ -827,12 +755,11 @@ let finalBills = [];
 let fuelLevels = [100, 15, 45, 10, 80];
 let statusReport = [];
 
-for (let i = 0; i < fuelLevels.length; i++){
-  if(fuelLevels[i] < 20){
-    statusReport.push('LOW');
-  }
-  else {
-    statusReport.push('OK')
+for (let i = 0; i < fuelLevels.length; i++) {
+  if (fuelLevels[i] < 20) {
+    statusReport.push("LOW");
+  } else {
+    statusReport.push("OK");
   }
 }
 console.log(fuelLevels);
@@ -845,26 +772,23 @@ console.log(statusReport);
 let points = [150, 40, 100, 95, 200];
 let customerStatus = [];
 
-//STArt at index 0 
+//STArt at index 0
 //STOP before end of points array
 // Step by 1
-// Target points[i] (if sandwich ) if points > 100 
+// Target points[i] (if sandwich ) if points > 100
 // Action customer = 'VIP'
 //ELSE = 'STANDARD;
 
 for (let i = 0; i < points.length; i++) {
-  if (points[i] >= 100){
-    customerStatus.push('VIP');
-  }
-  else {
-    customerStatus.push('STANDARD')
+  if (points[i] >= 100) {
+    customerStatus.push("VIP");
+  } else {
+    customerStatus.push("STANDARD");
   }
 }
-console.log('Points', points);
-console.log('Status', customerStatus);
+console.log("Points", points);
+console.log("Status", customerStatus);
 //let me try one more
-
-
 
 // let speeds = [55, 80, 65, 72, 40];
 // let policeReport = [];
@@ -886,7 +810,7 @@ console.log('Status', customerStatus);
 // console.log('Speed', speeds);
 // console.log('Report', policeReport);
 
-//i understand the syntax, but can you explain how .push takes the place of the previous method we used. If feels like i am asking to many questions 
+//i understand the syntax, but can you explain how .push takes the place of the previous method we used. If feels like i am asking to many questions
 
 let speeds = [55, 80, 65, 72, 40];
 let ticketsOnly = [];
@@ -896,20 +820,17 @@ let ticketsOnly = [];
 // 3. ACTION policeReport.push 'TICKET;
 
 for (let i = 0; i < speeds.length; i++) {
-  if (speeds[i] > 65){
-    ticketsOnly.push('TICKET');
+  if (speeds[i] > 65) {
+    ticketsOnly.push("TICKET");
   }
 }
-console.log('Ticket', ticketsOnly);
-
-
-
+console.log("Ticket", ticketsOnly);
 
 cart = [];
 
-cart.push('Apple');
-cart.push('Banana');
-cart.push('Cherry');
+cart.push("Apple");
+cart.push("Banana");
+cart.push("Cherry");
 
 console.log(cart);
 
@@ -923,10 +844,9 @@ evens = [];
 //If the number is divisible by two(even)(if sandwich)
 //Push to evens array(not sure how to do this)
 
-
 for (let i = 0; i < list.length; i++) {
   let currentNum = list[i];
-  if(currentNum % 2 === 0) {
+  if (currentNum % 2 === 0) {
     evens.push(currentNum);
   }
 }
@@ -965,14 +885,13 @@ for (let i = 0; i < orderTotals.length; i++) {
   if (orderTotals[i] > 100) {
     bigOrders.push(orderTotals[i]);
   }
-} 
+}
 console.log(bigOrders);
 
 //Im still not comfortable and it is time for me to go to work. Is this correct? can I practice a few me when I get off of work tonight or tomorrow when I have more time?
 
-
-inventoryCount = [5, 12, 2, 0, 20, 4]
-restockList = []; 
+inventoryCount = [5, 12, 2, 0, 20, 4];
+restockList = [];
 
 // Psuedo-code
 // Start at index 0
@@ -981,20 +900,20 @@ restockList = [];
 // If (sandwich) inventoryCount[i] is less than 5
 // Push inventoryCount to restockList array
 
-for (let i = 0; i < inventoryCount.length; i++){
-  if(inventoryCount[i] < 5){
+for (let i = 0; i < inventoryCount.length; i++) {
+  if (inventoryCount[i] < 5) {
     restockList.push(inventoryCount[i]);
   }
 }
-console.log(inventoryCount)
+console.log(inventoryCount);
 console.log(restockList);
 //I need help here
 
-guestNames = ['Tom', 'Allen', 'Jacob', 'Tim', 'Adam', 'Amy'];
+guestNames = ["Tom", "Allen", "Jacob", "Tim", "Adam", "Amy"];
 vipOnly = [];
 
 for (let i = 0; i < guestNames.length; i++) {
-  if (guestNames[i][0] === 'A') {
+  if (guestNames[i][0] === "A") {
     vipOnly.push(guestNames[i]);
   }
 }
@@ -1017,10 +936,10 @@ for (let i = 0; i < studentScores.length; i++) {
     passingStudents.push(studentScores[i]);
   }
 }
-console.log('All Students', studentScores);
-console.log('Passing Students', passingStudents);
+console.log("All Students", studentScores);
+console.log("Passing Students", passingStudents);
 
-randomWords = ['cat', 'elephant', 'dog', 'hippo', 'ox'];
+randomWords = ["cat", "elephant", "dog", "hippo", "ox"];
 shortWords = [];
 
 // Psuedo-code
@@ -1035,8 +954,8 @@ for (let i = 0; i < randomWords.length; i++) {
     shortWords.push(randomWords[i]);
   }
 }
-console.log('All Words', randomWords);
-console.log('Short Words', shortWords);
+console.log("All Words", randomWords);
+console.log("Short Words", shortWords);
 
 currentPrices = [80, 25, 150, 45, 10, 60];
 saleItems = [];
@@ -1049,12 +968,12 @@ saleItems = [];
 // Push currentPrices[i] to saleItems array
 
 for (let i = 0; i < currentPrices.length; i++) {
-  if (currentPrices[i] < 50){
+  if (currentPrices[i] < 50) {
     saleItems.push(currentPrices[i]);
   }
 }
-console.log('Prices', currentPrices)
-console.log('Sale Items', saleItems);
+console.log("Prices", currentPrices);
+console.log("Sale Items", saleItems);
 
 emails = ["Hello", "WINNER", "Lunch?", "WINNER", "Meeting"];
 spamFolder = [];
@@ -1071,8 +990,8 @@ for (let i = 0; i < emails.length; i++) {
     spamFolder.push(emails[i]);
   }
 }
-console.log('All Emails', emails)
-console.log('Spam',spamFolder);
+console.log("All Emails", emails);
+console.log("Spam", spamFolder);
 
 //Those took a lot of energy out of me.
 //Did I get them right?
@@ -1088,16 +1007,16 @@ vipSection = [];
 // Start at index 0
 // Stop before the end of fans array
 // Step by 1
-// IF fans[i] starts with the letter "J" && 
+// IF fans[i] starts with the letter "J" &&
 //  ages[i] is greater (>) than or equal to 18
 // Push fans[i] to vipSection array
 
 for (let i = 0; i < fans.length; i++) {
-  if (fans[i][0] === 'J' && ages[i] >= 18){
+  if (fans[i][0] === "J" && ages[i] >= 18) {
     vipSection.push(fans[i]);
   }
 }
-console.log('VIPS', vipSection);
+console.log("VIPS", vipSection);
 
 //.Slice review
 
@@ -1115,43 +1034,42 @@ inventory.splice(1, 1, "Grapes");
 console.log(inventory);
 
 //.slice
-jackets = ["Puffer", "Denim", "Leather", "Parka", "Blazer", "Trench"]
-let windows = jackets.slice(2, 4)
+jackets = ["Puffer", "Denim", "Leather", "Parka", "Blazer", "Trench"];
+let windows = jackets.slice(2, 4);
 
-console.log('Window Display', windows);
+console.log("Window Display", windows);
 
 //.splice
-cart = ["Laptop", "Phone", "Tablet", "Mouse", "Keyboard"]
+cart = ["Laptop", "Phone", "Tablet", "Mouse", "Keyboard"];
 
 cart.splice(2, 1, "Headphones");
-console.log('Cart', cart);
+console.log("Cart", cart);
 
 //.slice
 
-signUps = ["Alice", "Bob", "Charlie", "David", "Eve"]
+signUps = ["Alice", "Bob", "Charlie", "David", "Eve"];
 
-//Puedo-code 
+//Puedo-code
 //Use earlyBirds at a variable G
-//Go to index [0], then target index[2] 
+//Go to index [0], then target index[2]
 //This will show 'Alice' and 'Bob'
 //Log signUps the Log earlyBirds
 
 let earlyBirds = signUps.slice(0, 2);
 
-console.log('SignUps', signUps);
-console.log('Earlybirds', earlyBirds);
+console.log("SignUps", signUps);
+console.log("Earlybirds", earlyBirds);
 
 //.splice
 
-menu = ["Cupcake", "Croissant", "Muffin", "Brownie"]
+menu = ["Cupcake", "Croissant", "Muffin", "Brownie"];
 
-menu.splice(1, 1)
+menu.splice(1, 1);
 console.log(menu);
-
 
 //Mapping
 
-namesList2 = ["Alice", "Bob", "Charlie"]
+namesList2 = ["Alice", "Bob", "Charlie"];
 notificatons = [];
 
 // Psuedo-code
@@ -1161,7 +1079,7 @@ notificatons = [];
 // push that new string into notifications.
 
 for (let i = 0; i < namesList2.length; i++) {
-  notificatons.push(namesList2[i] + ' - Order Ready!');
+  notificatons.push(namesList2[i] + " - Order Ready!");
 }
 console.log(notificatons);
 
@@ -1179,7 +1097,7 @@ formattedPrices = [];
 // Push the result of that combination into formattedPrices.
 
 for (let i = 0; i < prices.length; i++) {
-  formattedPrices.push('$' + prices[i]);
+  formattedPrices.push("$" + prices[i]);
 }
 console.log(formattedPrices);
 
@@ -1196,10 +1114,10 @@ discounts = [];
 
 // Push that result into the discounts array.
 
-for(let i = 0; i < originalPrices.length; i++) {
-  discounts.push(originalPrices [i] * 0.1);
+for (let i = 0; i < originalPrices.length; i++) {
+  discounts.push(originalPrices[i] * 0.1);
 }
-console.log('Discounts', discounts);
+console.log("Discounts", discounts);
 
 //is the shortcut more common. i think i need to practice both.
 //thats all the time I have for today.
@@ -1209,15 +1127,14 @@ console.log('Discounts', discounts);
 billTotals = [50, 100, 200];
 finalBills2 = [];
 
-for (let i = 0; i < billTotals.length; i++){
-
-let totalWithTax = billTotals[i] * 1.07;
-finalBills2.push(totalWithTax);
+for (let i = 0; i < billTotals.length; i++) {
+  let totalWithTax = billTotals[i] * 1.07;
+  finalBills2.push(totalWithTax);
 }
 
-console.log('Final Bills', finalBills2);
+console.log("Final Bills", finalBills2);
 
-words = ["hello", "stop", "go"]
+words = ["hello", "stop", "go"];
 shoutedWords = [];
 // Start the loop at index 0.
 
@@ -1228,9 +1145,9 @@ shoutedWords = [];
 // Push that result into the shoutedWords array.
 
 for (let i = 0; i < words.length; i++) {
-  shoutedWords.push(words[i] + '!!!');
+  shoutedWords.push(words[i] + "!!!");
 }
-console.log('Shout', shoutedWords);
+console.log("Shout", shoutedWords);
 
 //I had some trouble with the long version.
 //Can I try one more long and one more short version?
@@ -1238,14 +1155,12 @@ console.log('Shout', shoutedWords);
 
 //Long version mapping practice(holding tray)
 
-
-
 grades = [70, 85, 90];
 curvedGrades = [];
 
 //Psuedo-code
 //Loop through grades
-//Declare variable newGrades 
+//Declare variable newGrades
 //Set newGrade Equal to grades[i] + 5
 //Push newGrade to curvedGrades
 
@@ -1255,8 +1170,7 @@ for (let i = 0; i < grades.length; i++) {
 }
 console.log(curvedGrades);
 
-
-users = ["pro_coder", "web_dev", "js_learner"]
+users = ["pro_coder", "web_dev", "js_learner"];
 newUsernames = [];
 
 //Psuedo-code
@@ -1265,9 +1179,9 @@ newUsernames = [];
 //Log newUsernames
 
 for (let i = 0; i < users.length; i++) {
-  newUsernames.push(users[i] + '2026');
+  newUsernames.push(users[i] + "2026");
 }
-console.log('Users', newUsernames);
+console.log("Users", newUsernames);
 
 // if I wanted a space between users[i] is there another way besides ' 2026'?
 // And also it is time for me to go to work so can I get save data?
@@ -1295,7 +1209,7 @@ let guests2 = ["Tony", "Sara"];
 
 for (let i = 0; i < guests2.length; i++) {
   // Glue: Name + " " + "is in seat" + " " + Number
-  console.log(guests2[i] + ' is in seat ' + i);
+  console.log(guests2[i] + " is in seat " + i);
 }
 
 let guests3 = ["Tony", "Sara"];
@@ -1311,7 +1225,7 @@ for (let i = 0; i < guests3.length; i++) {
 // let fruit = "Apples"
 // let amount = 5;
 
-// for (let i = 0; i < Apples.length; i++){ 
+// for (let i = 0; i < Apples.length; i++){
 //   console.log(`${fruit[i]} I have 5 Apples ${i}`);
 // }
 
@@ -1329,19 +1243,22 @@ console.log(`${name2} is ${age} years old`);
 
 //Template literals
 
-let city = "Miami"; let temp = 80;
-  console.log(`It is ${temp} in ${city}!`);
+let city = "Miami";
+let temp = 80;
+console.log(`It is ${temp} in ${city}!`);
 
-let item = "Pizza"; let price = 15;
-  console.log(`Your ${item} costs $${price}.`)
+let item = "Pizza";
+let price = 15;
+console.log(`Your ${item} costs $${price}.`);
 
-let user = "DevMode"; let status = "Online";
-  console.log(`User ${user} is currently ${status}.`)
+let user = "DevMode";
+let status = "Online";
+console.log(`User ${user} is currently ${status}.`);
 
 //Is it okay to add the (!) mark and the periods(.) at the end the way I did?
 //Are the Let city and let item = variables or objects?
 //And I just learned from this that they can go on the same line.
-//Is it okay that I put the console.log directly under the let city = 
+//Is it okay that I put the console.log directly under the let city =
 //Do I need to indent the console.log?
 //Sorry for so many questions
 
@@ -1360,17 +1277,17 @@ receipts = [];
 
 for (let i = 0; i < prices.length; i++) {
   let totalWithTax = prices[i] * 1.07;
-  receipts.push(`Total: ${totalWithTax. toFixed(2)}.`)
+  receipts.push(`Total: ${totalWithTax.toFixed(2)}.`);
 }
 console.log(receipts);
 // I refreshed the page because I lost my side scroll bar.
 // I lost this problem.
-// This is what the log shows (3) ['Total: 21.400000000000002.', 'Total: 21.400000000000002.', 'Total: 21.400000000000002.'] 
+// This is what the log shows (3) ['Total: 21.400000000000002.', 'Total: 21.400000000000002.', 'Total: 21.400000000000002.']
 // What is wrong?
 
 for (let i = 0; i < prices.length; i++) {
   let totalWithTax = prices[i] * 1.07;
-  receipts.push(`Total: ${totalWithTax. toFixed(2)}.`)
+  receipts.push(`Total: ${totalWithTax.toFixed(2)}.`);
 }
 console.log(receipts);
 
@@ -1391,13 +1308,12 @@ badges = [];
 // Step 3: push that variable into the badges array
 
 for (let i = 0; i < players.length; i++) {
-  badgeName = (`Player #0: ${players[i]}, Player #1: ${players[i]}, Player #2: ${players[i]}`) 
+  badgeName = `Player #0: ${players[i]}, Player #1: ${players[i]}, Player #2: ${players[i]}`;
   badges.push(badgeName);
 }
 console.log("Badge", badgeName);
 
 //I barely got that because I didnt know what you wanted the sentence to look like
-
 
 fruits = ["Apple", "Banana", "Cherry"];
 inventory = [];
@@ -1407,24 +1323,24 @@ inventory = [];
 //set call label and set it to string using backtick
 //push the label inventory array
 
-for (let i = 0; i < fruits.length; i++){
-  label = (`Shelf #${i}: ${fruits[i]}`);
+for (let i = 0; i < fruits.length; i++) {
+  label = `Shelf #${i}: ${fruits[i]}`;
   inventory.push(label);
 }
 console.log(inventory);
 
-winners = ["Alex", "Blake", "Casey"]
-rankings = []
+winners = ["Alex", "Blake", "Casey"];
+rankings = [];
 
 //loop through winners
 //set place equal to string using backtick
 //push place to rankings array
 
 for (let i = 0; i < winners.length; i++) {
-  rank = (`Place #${i + 1}: ${winners[i]}`);
+  rank = `Place #${i + 1}: ${winners[i]}`;
   rankings.push(rank);
 }
-console.log('Place', rankings);
+console.log("Place", rankings);
 
 //I need another long one
 
@@ -1436,14 +1352,13 @@ logs = [];
 //loop through fans
 //set entryLog = to something
 
-for (let i = 0; i < fans.length; i++){
-  entryLog = (`${ticketPrefix} ${fans[i]} (ID: ${i})`);
+for (let i = 0; i < fans.length; i++) {
+  entryLog = `${ticketPrefix} ${fans[i]} (ID: ${i})`;
   logs.push(entryLog);
 }
 console.log(logs);
 
 //index.js:1440 Uncaught SyntaxError: missing ) after argument list (at index.js:1440:43)
-
 
 books = ["The Hobbit", "1984"];
 labels = [];
@@ -1455,8 +1370,8 @@ labels = [];
 //set equal to backtick sentence
 //push bookLabel to labels
 
-for(let i = 0; i < books.length; i++) {
-  bookLabel = (`Title: ${books[i]} [Shelf: ${i}]`)
+for (let i = 0; i < books.length; i++) {
+  bookLabel = `Title: ${books[i]} [Shelf: ${i}]`;
   labels.push(bookLabel);
 }
 //the reason i put 0 is beacause it say goal: Create the sentence: "Title: The Hobbit [Shelf: 0]"
@@ -1467,10 +1382,9 @@ for(let i = 0; i < books.length; i++) {
 
 //Short Version
 // labels.push(`Title: ${books[i]} [Shelf: ${i}]`)
-console.log('Book Label', labels)
+console.log("Book Label", labels);
 
-
-members = ["Alex", "Blake"]
+members = ["Alex", "Blake"];
 list = [];
 
 //loop throught members
@@ -1478,10 +1392,10 @@ list = [];
 //push backtick sentence to list
 //log list
 
-for(let i = 0; i < members.length; i++) {
-  list.push(`Member: ${members[i]}`)
+for (let i = 0; i < members.length; i++) {
+  list.push(`Member: ${members[i]}`);
 }
-console.log('Members', list);
+console.log("Members", list);
 
 //I'm gonna take a break.
 //Did I get if right?
@@ -1496,10 +1410,10 @@ saleTags = [];
 //push backtick sentence to saleTags array
 //log saleTags
 
-for (let i =0; i < prices.length; i++) {
+for (let i = 0; i < prices.length; i++) {
   saleTags.push(`Sale: ${prices[i] * 0.9}`);
 }
-console.log('Sale Prices', saleTags);
+console.log("Sale Prices", saleTags);
 
 //can I try another?
 
@@ -1512,11 +1426,9 @@ finalBills = [];
 //log finalBills
 
 for (let i = 0; i < orders.length; i++) {
-  finalBills.push(`Final Bill: $${ (orders[i] * 1.15).toFixed(2) }`);
+  finalBills.push(`Final Bill: $${(orders[i] * 1.15).toFixed(2)}`);
 }
-console.log('Final Bill', finalBills);
-
-
+console.log("Final Bill", finalBills);
 
 //Why two $$ in front of $${(orders)}
 //I need another one
@@ -1533,7 +1445,7 @@ results = [];
 for (let i = 0; i < students.length; i++) {
   results.push(`${students[i]} scored ${scores[i]}`);
 }
-console.log('Student Scores', results);
+console.log("Student Scores", results);
 
 //is this better
 
@@ -1551,7 +1463,7 @@ storeLog = [];
 for (let i = 0; i < items.length; i++) {
   storeLog.push(`${items[i]}:, $${(prices2[i] * 1.07).toFixed(2)}`);
 }
-console.log('Final Price', storeLog);
+console.log("Final Price", storeLog);
 
 //I struggled with this
 //Did I get It right
@@ -1569,15 +1481,13 @@ finalTickets = [];
 //log finalTickets
 
 for (let i = 0; i < fans.length; i++) {
-  finalTickets.push(`${fans[i]}: $${(basePrices[i] + 5.00).toFixed(2)}`);
+  finalTickets.push(`${fans[i]}: $${(basePrices[i] + 5.0).toFixed(2)}`);
 }
-console.log('Final Ticket Price', finalTickets);
+console.log("Final Ticket Price", finalTickets);
 
 // Final Ticket Price (3) ['Avery:, $function toFixed() { [native code] }', 'Jordan:, $function toFixed() { [native code] }', 'Taylor:, $function toFixed() { [native code] }']
 
 //I dont know what went wrong
-
-
 
 // The "Tax & Tip" Challenge
 // Since you hit that "Native Code" speed bump, let's do one more to smooth it out. This time, we'll calculate a 20% Tip.
@@ -1590,16 +1500,14 @@ totalWithTip = [];
 //backtick sentence added 20% (1.20) to bills. push to totalTip[]
 //log totalTip
 
-for(let i = 0; i < diners.length; i++) {
-  totalWithTip.push(`${diners[i]}: $${(bills[i] * 1.20).toFixed(2)}`);
+for (let i = 0; i < diners.length; i++) {
+  totalWithTip.push(`${diners[i]}: $${(bills[i] * 1.2).toFixed(2)}`);
 }
-console.log('Total With Tip', totalWithTip);
+console.log("Total With Tip", totalWithTip);
 
 //is it correct?
 //time for me to save and got to work
 //Next level 3
-
-
 
 // Scenario: You are a teacher. You have a list of students and their scores. You need to create a list that says "Pass" if the score is 70 or higher, and "Fail" if it’s lower.
 
@@ -1607,18 +1515,15 @@ students = ["Alex", "Blake", "Casey"];
 scores = [90, 50, 85];
 reportCards = [];
 
-
-
 //loop through students array
 //IF score[i] >= 70 pass
 //ELSE fail
 
 for (let i = 0; i < students.length; i++) {
   if (scores[i] >= 70) {
-    reportCards.push(`${students[i]}: Pass`)
-  }
-  else {
-    reportCards.push(`${students[i]}; Fail`)
+    reportCards.push(`${students[i]}: Pass`);
+  } else {
+    reportCards.push(`${students[i]}; Fail`);
   }
 }
 console.log(reportCards);
@@ -1637,12 +1542,11 @@ shippingStatus = [];
 //ELSE $5.00 (backtick sentence)
 //Log Shipping staatus
 
-for (let i = 0; i < customers.length; i++){
-  if(totals[i] >= 50){
-    shippingStatus.push(`${customers[i]}: Free`)
-  }
-  else {
-    shippingStatus.push(`${customers[i]}: $5.00`)
+for (let i = 0; i < customers.length; i++) {
+  if (totals[i] >= 50) {
+    shippingStatus.push(`${customers[i]}: Free`);
+  } else {
+    shippingStatus.push(`${customers[i]}: $5.00`);
   }
 }
 console.log(shippingStatus);
@@ -1701,11 +1605,9 @@ status = [];
 for (let i = 0; i < names.length; i++) {
   if (visits[i] > 20) {
     status.push(`${names[i]}: Gold Member`);
-  }
-  else if (visits[i] > 10 &&  visits[i] <= 20) {
+  } else if (visits[i] > 10 && visits[i] <= 20) {
     status.push(`${names[i]}: Silver Member`);
-  }
-  else {
+  } else {
     status.push(`${names[i]}: Bronze Member`);
   }
 }
@@ -1727,10 +1629,10 @@ guests = ["Alex", "Blake", "Casey"];
 ages = [25, 12, 3];
 tickets = [];
 
-//loop through guests 
+//loop through guests
 //IF ages is greater than (>) 18
 //PUSH backtick sentence Pay $50 to tickets array
-//ELSE IF age 15 -17 
+//ELSE IF age 15 -17
 //PUSH backtick sentence Pay $30 to tickets array
 //ELSE PUSH backtick sentence Free to tickets array
 //LOG tickets
@@ -1738,25 +1640,23 @@ tickets = [];
 for (let i = 0; i < guests.length; i++) {
   if (ages[i] >= 18) {
     tickets.push(`${guests[i]}; Pay $50`);
-  }
-  else if (ages[i] >= 5) {
+  } else if (ages[i] >= 5) {
     tickets.push(`${guests[i]}: Pay $30`);
+  } else {
+    tickets.push(`${guests[i]}: Free`);
   }
-  else {
-    tickets.push(`${guests[i]}: Free`)
-  }
-}console.log(tickets);
+}
+console.log(tickets);
 
 // is this correct?
 
 // 🎒 Challenge 1: The "Bulk Discount" (Math + Formatting)
 // Scenario: You're selling coffee beans. If someone buys more than 5 bags, they get a discount.
 
-names2 = ["Alice", "Bob"]; 
-bags = [10, 3]; 
+names2 = ["Alice", "Bob"];
+bags = [10, 3];
 finalPrice = [];
 let pricePerBag = 15;
-
 
 // Math: (bags[i] * pricePerBag).
 // Goal: Use a one-liner to push: "Alice: $150.00".
@@ -1767,16 +1667,16 @@ let pricePerBag = 15;
 //Log finalPrice
 
 for (let i = 0; i < names2.length; i++) {
-  if(bags[i] > 5) {
+  if (bags[i] > 5) {
     finalPrice.push(`${names2[i]}: ${(bags[i] * pricePerBag).toFixed(2)} `);
   }
-} 
+}
 console.log(finalPrice);
 
 // 🎒 Challenge 2: The "Speed Trap" (Logic + Two Arrays)
 // Scenario: You're a state trooper.
 
-drivers = ["Speedy", "Slowy"]; 
+drivers = ["Speedy", "Slowy"];
 speeds = [85, 60];
 limits = [];
 
@@ -1788,11 +1688,10 @@ limits = [];
 //ELSE PUSH 'Slowly Safe sentence' to limits
 //Log Limits
 
-for(let i = 0; i < drivers.length; i++) {
-  if(speeds[i] > 70){
+for (let i = 0; i < drivers.length; i++) {
+  if (speeds[i] > 70) {
     limits.push(`${drivers[i]}: Ticket`);
-  }
-  else {
+  } else {
     limits.push(`${drivers[i]}: Safe`);
   }
 }
@@ -1849,14 +1748,12 @@ bills = [];
 //ELSE PUSH sentence users[i]===5 to bills
 //LOG bills
 
-for (let i = 0; i < users.length; i++){
-  if(plans[i] === 'Premium') {
+for (let i = 0; i < users.length; i++) {
+  if (plans[i] === "Premium") {
     bills.push(`${users[i]}: $20`);
-  }
-  else if(plans[i] === 'Basic') {
+  } else if (plans[i] === "Basic") {
     bills.push(`${users[i]}: $10`);
-  }
-  else {
+  } else {
     bills.push(`${users[i]}: $5`);
   }
 }
@@ -1865,7 +1762,7 @@ console.log(bills);
 //I am still struggling through this a little.
 //I need to go to work
 //should I move on to objects tomorrow and just review these challenges again later?
-//I also need save data 
+//I also need save data
 //Muiltiple array headache left behind
 
 // let students = ["Alex", "Blake", "Casey", "Drew"];
